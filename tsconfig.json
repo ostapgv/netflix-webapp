@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "allowJs": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "jsx": "react",
+    "outDir": "./built",
+    "rootDirs": [
+      "./",
+      "./built/css-modules"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "built"
+  ]
+}
