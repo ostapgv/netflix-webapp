@@ -1,0 +1,14 @@
+@import "../../styles/common";
+@import "../../styles/colors";
+
+.nf-status-bar.container {
+  width: $commonWidth;
+  padding: 0 7%;
+  background-color: $greyLight;
+  font-weight: bold;
+  color: $greyDark;
+  .nf-status-bar-row {
+    padding: 15px 0;
+  }
+}
+

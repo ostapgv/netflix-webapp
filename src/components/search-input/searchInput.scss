@@ -1,0 +1,19 @@
+@import "../../styles/colors";
+
+.nf-search-input.form-control {
+  width: 100%;
+  padding: 10px 15px;
+  height: 45px;
+  border: 0;
+  border-bottom: 1px solid $pink;
+  background-color: $black;
+  color: $white;
+  border-radius: 0;
+  &:active {
+    border: 0;
+  }
+  ~i {
+    top: 7px;
+  }
+}
+

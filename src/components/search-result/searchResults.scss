@@ -1,0 +1,15 @@
+@import "../../styles/common";
+@import "../../styles/colors";
+
+.nf-search-result.container {
+  width: $commonWidth;
+  padding: 0 4%;
+  font-size: 3em;
+  font-weight: bold;
+  color: $greyMiddle;
+  .nf-search-result-row {
+    padding: 150px 0 300px 0;
+    text-align: center;
+  }
+}
+

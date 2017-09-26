@@ -1,0 +1,17 @@
+@import "../../styles/colors";
+
+.nf-button {
+  background-color: $greyDark;
+  color: $white;
+  margin-left: 15px;
+  &.btn.btn-custom:hover, &.btn.btn-custom:focus {
+    color: $white;
+  }
+  &.big {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  &.active {
+    background-color: $pink;
+  }
+}

@@ -1,0 +1,9 @@
+@import "../../styles/common";
+@import "../../styles/colors";
+
+.nf-footer.container {
+  width: $commonWidth;
+  padding: 0 4%;
+  background-color: $footer;
+}
+

@@ -1,0 +1,21 @@
+@import "../../styles/common";
+@import "../../styles/colors";
+
+.nf-sort-by {
+  ul {
+    margin-bottom: 0;
+  }
+  li {
+    list-style: none;
+    display: inline;
+    padding-left: 15px;
+    a {
+      color: $greyDark;
+      text-decoration: none;
+    }
+    a:active, a.active, a:focus, a:hover {
+      color: $pink;
+    }
+  }
+}
+

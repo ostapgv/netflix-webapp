@@ -1,0 +1,29 @@
+@import "../../styles/common";
+@import "../../styles/colors";
+
+.nf-search.container {
+  width: $commonWidth;
+  padding: 0 7%;
+  position: relative;
+  z-index: 1;
+  background:
+    linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+    ),
+    url("../../../public/background.jpg") center center;
+  background-size: cover;
+}
+
+.nf-title {
+  padding: 15px;
+  color: $white;
+}
+
+.nf-search-by {
+  color: $white;
+  font-size: 12px;
+  margin-top: 3px;
+  display: inline-block;
+}
+
