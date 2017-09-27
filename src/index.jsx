@@ -3,6 +3,7 @@ import * as ReactDom from 'react-dom';
 import {App} from './App';
 import {Main} from './components/main';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 const render = () => {
   ReactDom.render((

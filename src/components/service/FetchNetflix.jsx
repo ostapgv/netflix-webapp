@@ -7,7 +7,7 @@ export class FetchNetflix extends React.PureComponent {
     this.API_URL = "https://netflixroulette.net/api/api.php?";
   }
 
-  fetch(requestData, callback, byDirector) {
+  fetch(requestData, callback, errorCallback, byDirector) {
     byDirector = !!byDirector;
     if (typeof callback !== 'function') {
       throw new Error("The callback parameter was not a function");
@@ -22,6 +22,7 @@ export class FetchNetflix extends React.PureComponent {
       }
 
       if (httpReq.status !== 200) {
+        errorCallback();
         throw new Error("Unexpected HTTP Status Code (" + httpReq.status + ")");
       }
 

@@ -1,0 +1,31 @@
+@import "../../styles/colors";
+
+.nf-film {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  color: $greyDark;
+  .title {
+    flex: 80%;
+    font-weight: bold;
+  }
+  .year {
+    flex: 20%;
+    text-align: right;
+    span {
+      display: inline-block;
+      border: 1px solid $greyDark;
+      border-radius: 2px;
+      font-size: 0.8em;
+      padding: 0 2px;
+      font-weight: bold;
+    }
+  }
+  .category {
+    font-size: 0.8em;
+    color: $greyMiddle;
+    padding-top: 5px;
+  }
+}
+

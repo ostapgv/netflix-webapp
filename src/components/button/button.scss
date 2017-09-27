@@ -6,6 +6,7 @@
   margin-left: 15px;
   &.btn.btn-custom:hover, &.btn.btn-custom:focus {
     color: $white;
+    outline: 0;
   }
   &.big {
     padding-left: 40px;

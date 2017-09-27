@@ -1,15 +1,11 @@
 @import "../../styles/common";
 @import "../../styles/colors";
 
-.nf-no-results.container {
-  width: $commonWidth;
-  padding: 0 4%;
+.nf-no-results {
   font-size: 3em;
   font-weight: bold;
   color: $greyMiddle;
-  .nf-no-results-row {
-    padding: 150px 0 300px 0;
-    text-align: center;
-  }
+  padding: 150px 0 300px 0;
+  text-align: center;
 }
 
