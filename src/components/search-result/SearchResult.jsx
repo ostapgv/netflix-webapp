@@ -5,20 +5,32 @@ import './searchResults.scss';
 
 export class SearchResult extends React.PureComponent {
 
-  render() {
-    let films = this.props.films;
-    if (films && !Array.isArray(films)) {
-      films = [this.props.films];
-    }
+  shouldComponentUpdate() {
+    return true;
+  }
 
+  render() {
+    let filmList, formatedFilmList = [];
+
+    if (this.props.films) {
+
+      filmList = this.props.films.map((film,) =>
+        <Film key={film.show_id} film={film}/>
+      );
+
+      let idx = 0;
+      for (let i = 0; i < filmList.length; i = i + 3) {
+        formatedFilmList[idx] = <div key={idx} className="row">
+          {filmList[i] || null}
+          {filmList[i + 1] || null}
+          {filmList[i + 2] || null}
+        </div>;
+        idx++;
+      }
+    }
     return (
       <div className="nf-search-result container">
-        <div className="row">
-          {films ?
-            films.map((film) => <Film key={film.show_id} film={film}/>) :
-            <NoResults/>
-          }
-        </div>
+        {filmList ? formatedFilmList : <NoResults/>}
       </div>
     )
   }

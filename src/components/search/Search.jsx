@@ -12,7 +12,7 @@ export class Search extends React.PureComponent {
     this.state = {
       query: this.props.commonState.query,
       byDirector: this.props.commonState.byDirector,
-      sortByRaiting: this.props.commonState.sortByRaiting
+      sortByRating: this.props.commonState.sortByRating
     }
   }
 
@@ -25,13 +25,13 @@ export class Search extends React.PureComponent {
   onSearchByChange(button) {
     this.setState({
       byDirector: button.value === 'DIRECTOR'
-    },function() {
+    }, function () {
       this.onSubmit();
     });
   }
 
   onSubmit() {
-    this.props.search(this.state.query, this.state.byDirector, this.state.sortByRaiting);
+    this.props.search(this.state.query, this.state.byDirector, this.state.sortByRating);
   }
 
   render() {
